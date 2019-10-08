@@ -205,7 +205,7 @@ endfunction
 
 function! s:SketchPrefix(is_song)
   let title  = substitute(expand('%:r:t'), '^\(.*\)$', '\u\1', '')
-  let title  = substitute( title, '[_-]', ' ', '')
+  let title  = substitute( title, '[_-]', ' ', 'g')
   call inputsave()
   let title  = input('title(' . title . '): ', title)
   let time   = input('time: ', 'n')
