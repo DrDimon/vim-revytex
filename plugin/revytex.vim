@@ -267,8 +267,8 @@ command! RevytexToSong              call ToSong()
 
 if !exists("g:revytex_no_mappings") || ! g:revytex_no_mappings
   vmap s <Nop>
-  nmap sq <Plug>FormatSketch()<CR>
+  nmap sq <Plug>FormatSketch<CR>
   vmap sq :call FormatSketch()<CR>
-  nmap sa <Plug>FormatSong()<CR>
+  nmap sa <Plug>FormatSong<CR>
   vmap sa :call FormatSong()<CR>
 endif
